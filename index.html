@@ -2,50 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Dorée — Fine Dining Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#7a4a10">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Chakula Restaurant — Fine Dining Nairobi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="page">
+<div class="book-wrap">
 
-    <div class="cover">
-      <div class="corner tl"></div><div class="corner tr"></div>
-      <div class="corner bl"></div><div class="corner br"></div>
-      <p class="cover-est">Est. 1987 &middot; Nairobi</p>
-      <h1 class="cover-title">Maison Dor&eacute;e</h1>
-      <p class="cover-tag">A Table of Distinction</p>
-      <div class="cover-orn">— ✦ —</div>
-      <p class="cover-date">Seasonal Menu &middot; 2026</p>
+  <div class="book-header">
+    <div>
+      <div class="book-header-title">Chakula Restaurant</div>
+      <span class="book-header-sub">À la Carte Menu</span>
     </div>
-
-    <div class="filters">
-      <span class="filter-label">Filter:</span>
-      <button class="fbtn active" data-filter="all">All dishes</button>
-      <button class="fbtn" data-filter="vegan">Vegan</button>
-      <button class="fbtn" data-filter="vegetarian">Vegetarian</button>
-      <button class="fbtn" data-filter="gluten-free">Gluten-free</button>
-      <button class="fbtn" data-filter="signature">Chef's signature</button>
-    </div>
-
-    <div id="menu-body"></div>
-
-    <div class="footer">
-      <div class="footer-orn">✦ ✦ ✦</div>
-      <div class="legend">
-        <div class="legend-item"><div class="legend-dot" style="background:#84c99a"></div>Vegan ingredient</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#e8a0a0"></div>Common allergen</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#d4aa5a"></div>Standard ingredient</div>
-      </div>
-      <p class="footer-note" style="margin-top:14px">Please inform your server of any dietary requirements</p>
-      <p class="footer-note" style="margin-top:6px;opacity:.7">Tap any dish to reveal its full story</p>
-    </div>
-
   </div>
 
-  <script src="js/menu.js"></script>
+  <div id="book-container"></div>
+
+  <div class="nav-bar">
+    <button class="nbtn" id="btn-prev" onclick="turn(-1)">&#8592; Back</button>
+    <span class="pg-ind" id="pg-ind">Cover</span>
+    <button class="nbtn" id="btn-next" onclick="turn(1)">Next &#8594;</button>
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
