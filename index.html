@@ -7,33 +7,18 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Chakula Restaurant — Fine Dining Nairobi</title>
+  <title>Safari Restaurant — Fine Dining Nairobi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="book-wrap">
-
-  <div class="book-header">
-    <div>
-      <div class="book-header-title">Chakula Restaurant</div>
-      <span class="book-header-sub">À la Carte Menu</span>
-    </div>
+  <div class="book" id="book">
+    <canvas id="curl-canvas"></canvas>
+    <div class="nav-dots" id="nav-dots"></div>
+    <div class="swipe-hint" id="swipe-hint">swipe to turn page ›</div>
   </div>
-
-  <div id="book-container"></div>
-
-  <div class="nav-bar">
-    <button class="nbtn" id="btn-prev" onclick="turn(-1)">&#8592; Back</button>
-    <span class="pg-ind" id="pg-ind">Cover</span>
-    <button class="nbtn" id="btn-next" onclick="turn(1)">Next &#8594;</button>
-  </div>
-
-</div>
-
-<script src="js/data.js"></script>
-<script src="js/menu.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
